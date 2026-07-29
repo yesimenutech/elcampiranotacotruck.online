@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Campirano Taco Truck – Auténtica Comida Mexicana en Steelton, PA</title>
+    <meta name="description" content="Auténtica comida mexicana y tacos tradicionales en Steelton, PA. Disfruta de birria, chilaquiles, tacos al pastor y más en El Campirano Taco Truck. Pide en línea.">
+    <meta property="og:title" content="El Campirano Taco Truck – Auténtica Comida Mexicana">
+    <meta property="og:description" content="Auténticos tacos mexicanos, birria, chilaquiles y flautas con el verdadero sabor tradicional. Visítanos en 310 S Front St, Steelton, PA.">
+    <meta property="og:image" content="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_1200/v1785339335/image_-_2026-07-23T103232.973_yfyg0s.png">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:url" content="https://elcampiranotacotruck.onlineordering.io/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="El Campirano Taco Truck – Comida Mexicana Auténtica">
+    <meta name="twitter:description" content="Auténticos tacos mexicanos, birria, chilaquiles y flautas con el verdadero sabor tradicional en Steelton, PA.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_1200/v1785339335/image_-_2026-07-23T103232.973_yfyg0s.png">
+    <link rel="canonical" href="https://elcampiranotacotruck.onlineordering.io/">
+    <link rel="icon" id="favicon" type="image/png" href="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1785339018/ElCampiranoLOGO_1_xurace.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600;1,700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "El Campirano Taco Truck",
+      "image": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785339335/image_-_2026-07-23T103232.973_yfyg0s.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "310 S Front St",
+        "addressLocality": "Steelton",
+        "addressRegion": "PA",
+        "postalCode": "17113",
+        "addressCountry": "US"
+      },
+      "telephone": "717-888-095",
+      "servesCuisine": "Mexican",
+      "url": "https://elcampiranotacotruck.onlineordering.io/en/?locationId=1502660&orderMode=in_store_pickup",
+      "openingHours": "Mo-Sa 11:00-20:30"
+    }
+    </script>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-verde: #1a5b3a;
+            --color-verde-dark: #124029;
+            --color-verde-light: #25784d;
+            --color-rojo: #c92a31;
+            --color-rojo-dark: #9e1f25;
+            --color-rojo-light: #e03b43;
+            --color-dorado: #e2a843;
+            --color-white: #ffffff;
+            --color-crema: #fdfaf6;
+            --color-crema-dark: #f4ece1;
+            --color-text-dark: #222222;
+            --color-text-muted: #555555;
+            --color-footer: #151a17;
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-main: 'Montserrat', sans-serif;
+            --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 16px 40px rgba(0, 0, 0, 0.14);
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-main);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--color-text-dark);
+            background-color: var(--color-crema);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .mexican-bar {
+            height: 5px;
+            width: 100%;
+            background: linear-gradient(90deg, var(--color-verde) 0%, var(--color-verde) 33.3%, var(--color-white) 33.3%, var(--color-white) 66.6%, var(--color-rojo) 66.6%, var(--color-rojo) 100%);
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 84px;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--color-verde-dark);
+            letter-spacing: -0.5px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-link {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--color-text-dark);
+            letter-spacing: 1.2px;
+            padding: 8px 0;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background-color: var(--color-rojo);
+            transition: width 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--color-rojo);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .lang-switch {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: 12px;
+            border-left: 2px solid #e8e1d7;
+            padding-left: 20px;
+        }
+
+        .lang-btn {
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 13px;
+            padding: 4px 8px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+
+        .lang-btn.active {
+            background-color: var(--color-verde);
+            color: var(--color-white);
+        }
+
+        .lang-btn:not(.active) {
+            color: var(--color-text-muted);
+        }
+
+        .lang-btn:not(.active):hover {
+            color: var(--color-rojo);
+        }
+
+        .navbar-toggler {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .toggler-icon {
+            width: 28px;
+            height: 3px;
+            background-color: var(--color-verde-dark);
+            border-radius: 3px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_1600/v1785339335/image_-_2026-07-23T103232.973_yfyg0s.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 120px 0 80px;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(18, 64, 41, 0.88) 0%, rgba(20, 20, 20, 0.82) 50%, rgba(201, 42, 49, 0.8) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: var(--color-white);
+            padding: 0 20px;
+            max-width: 960px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            padding: 8px 20px;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--color-dorado);
+            margin-bottom: 24px;
+        }
+
+        .hero-logo-container {
+            margin-bottom: 32px;
+        }
+
+        .hero-logo {
+            max-height: 160px;
+            width: auto;
+            display: block;
+            margin: 0 auto;
+            filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.4));
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(40px, 6.5vw, 76px);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+            text-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-subtitle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #f1f1f1;
+            margin-bottom: 40px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .line-decoration {
+            width: 50px;
+            height: 2px;
+            background-color: var(--color-dorado);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 36px;
+        }
+
+        .btn-custom {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px 36px;
+            font-size: 15px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-radius: 50px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+            border: none;
+        }
+
+        .btn-order {
+            background-color: var(--color-rojo);
+            color: var(--color-white);
+            border: 2px solid var(--color-rojo);
+        }
+
+        .btn-order:hover {
+            background-color: var(--color-rojo-dark);
+            border-color: var(--color-rojo-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 14px 30px rgba(201, 42, 49, 0.4);
+        }
+
+        .btn-menu {
+            background-color: var(--color-verde);
+            color: var(--color-white);
+            border: 2px solid var(--color-verde);
+        }
+
+        .btn-menu:hover {
+            background-color: var(--color-verde-dark);
+            border-color: var(--color-verde-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 14px 30px rgba(26, 91, 58, 0.4);
+        }
+
+        .hero-address {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--color-white);
+            background: rgba(0, 0, 0, 0.35);
+            padding: 12px 28px;
+            border-radius: 50px;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        /* Section Commons */
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-subtitle-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            margin-bottom: 12px;
+        }
+
+        .line-small {
+            width: 35px;
+            height: 3px;
+            background-color: var(--color-rojo);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: var(--color-verde);
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 4vw, 44px);
+            font-weight: 800;
+            color: var(--color-verde-dark);
+            line-height: 1.25;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 110px 0;
+            background-color: var(--color-crema);
+            position: relative;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text {
+            background: var(--color-white);
+            padding: 48px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+            border-top: 6px solid var(--color-verde);
+        }
+
+        .about-text h2 {
+            font-family: var(--font-display);
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--color-verde-dark);
+            margin-bottom: 24px;
+        }
+
+        .about-text p {
+            color: var(--color-text-muted);
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .about-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .about-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            position: relative;
+        }
+
+        .about-image-wrapper {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+        }
+
+        .about-image-wrapper:nth-child(1) {
+            transform: translateY(-20px);
+        }
+
+        .about-image-wrapper:nth-child(2) {
+            transform: translateY(20px);
+        }
+
+        .about-image {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .about-image-wrapper:hover .about-image {
+            transform: scale(1.08);
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 110px 0;
+            background-color: var(--color-white);
+            border-top: 1px solid #efe8df;
+            border-bottom: 1px solid #efe8df;
+        }
+
+        #gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            aspect-ratio: 1 / 1;
+            group: 'item';
+            background-color: var(--color-crema);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(18, 64, 41, 0.85) 0%, rgba(18, 64, 41, 0) 60%);
+            display: flex;
+            align-items: flex-end;
+            padding: 24px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-label {
+            color: var(--color-white);
+            font-family: var(--font-display);
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        /* Info & Location Section */
+        .info-section {
+            padding: 110px 0;
+            background-color: var(--color-crema);
+        }
+
+        .info-card {
+            background: var(--color-white);
+            border-radius: var(--radius-lg);
+            padding: 60px;
+            box-shadow: var(--shadow-soft);
+            border-bottom: 6px solid var(--color-rojo);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 28px;
+            background-color: var(--color-crema);
+            border-radius: var(--radius-md);
+            transition: transform 0.3s ease;
+            border: 1px solid #ece4d8;
+        }
+
+        .info-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.06);
+        }
+
+        .info-icon {
+            width: 56px;
+            height: 56px;
+            background-color: var(--color-verde);
+            color: var(--color-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            box-shadow: 0 6px 16px rgba(26, 91, 58, 0.25);
+        }
+
+        .info-item h4 {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--color-verde-dark);
+            margin-bottom: 12px;
+        }
+
+        .info-item p {
+            color: var(--color-text-muted);
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--color-verde-dark) 0%, var(--color-verde) 100%);
+            padding: 80px 0;
+            color: var(--color-white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-banner h3 {
+            font-family: var(--font-display);
+            font-size: 38px;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+
+        .cta-banner p {
+            font-size: 18px;
+            color: #e5ede9;
+            margin-bottom: 32px;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: var(--color-footer);
+            padding: 80px 0 40px;
+            color: #b0b8b3;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--color-white);
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .footer-desc {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 24px;
+            max-width: 360px;
+        }
+
+        .footer-title {
+            font-family: var(--font-display);
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--color-white);
+            margin-bottom: 24px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background-color: var(--color-rojo);
+        }
+
+        .footer-col p {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .social-link {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .social-link:hover {
+            background-color: var(--color-rojo);
+            transform: translateY(-3px);
+            border-color: var(--color-rojo);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 14px;
+            color: #7b857f;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 32px;
+        }
+
+        .menutech-link {
+            color: var(--color-dorado);
+            font-weight: 800;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        .menutech-link:hover {
+            color: var(--color-white);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .about-images {
+                order: -1;
+            }
+
+            .about-image-wrapper:nth-child(1),
+            .about-image-wrapper:nth-child(2) {
+                transform: none;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .footer-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+
+            .footer-desc {
+                margin: 0 auto 24px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-toggler {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background-color: var(--color-white);
+                padding: 24px;
+                gap: 20px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                transform: translateY(-120%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .nav-menu.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .lang-switch {
+                border-left: none;
+                border-top: 1px solid #e8e1d7;
+                padding-left: 0;
+                padding-top: 16px;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .hero-title {
+                font-size: 38px;
+            }
+
+            .hero-subtitle {
+                font-size: 15px;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn-custom {
+                width: 100%;
+            }
+
+            .about-text,
+            .info-card {
+                padding: 32px 20px;
+            }
+
+            .about-images {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                height: 280px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-badge {
+                font-size: 11px;
+                padding: 6px 14px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+    <script>
+        window.MENU_TECH_STATE = {
+            "lang": "es",
+            "showReservations": false,
+            "showAbout": true,
+            "showPromo": false,
+            "showGallery": true,
+            "showCatering": false,
+            "showInfo": true,
+            "showDelivery": false,
+            "cuid": "00000",
+            "ruid": "00000",
+            "title": "El Campirano Taco Truck",
+            "logoImg": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785339018/ElCampiranoLOGO_1_xurace.png",
+            "heroAddress": "310 S Front St, Steelton, PA 17113",
+            "heroImg": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785339335/image_-_2026-07-23T103232.973_yfyg0s.png",
+            "aboutImg1": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785339069/IMG-20260723-WA0012_ondiw3.jpg",
+            "aboutImg2": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785339071/IMG-20260723-WA0014_zhcpgj.jpg",
+            "promoBg": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1777151404/yiebnrm6l10wizbcdbp2.jpg",
+            "cateringBg": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1777151404/yiebnrm6l10wizbcdbp2.jpg",
+            "deliveryImg": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1777151404/yiebnrm6l10wizbcdbp2.jpg",
+            "gallery": [
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785339145/TOSTADA_POLLO_ASADO_bkb3pi.webp",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785339146/CHILAQUILES_ROJOS_manclk.webp",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785339146/TACOS_DE_BIRRIA_bj1ydy.webp",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785339147/QUESADILLA_DE_CHORIZO_cvomir.webp",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785339148/FLAUTAS_DE_QUESO_qnnkss.webp",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785339148/ELOTE_yysbqq.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785339149/CHILAQUILES_VERDES_CON_CARNE_fzd4xn.webp",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785339150/CEMITA_AL_PASTOR_spj8xq.webp",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785339150/BIRRIA_RAMEN_q0w3g1.webp"
+            ],
+            "contact": {
+                "phone": "717-888-095",
+                "address": "310 S Front St, Steelton, PA 17113",
+                "hours": "LUNES A SABADO 11AM-8:30PM"
+            },
+            "socials": [
+                {"platform": "instagram", "url": "https://www.instagram.com/elcampiranomexicanfood/"},
+                {"platform": "tiktok", "url": "https://www.tiktok.com/@el.campirano.mexi"}
+            ],
+            "paragraphs": {
+                "about_en": "At El Campirano Taco Truck, we take pride in bringing our guests vibrant and authentic Mexican cuisine, crafted with care and rich culinary tradition. Every dish we serve is full of bold flavors and prepared to deliver a memorable dining experience. We are confident you will leave satisfied.\n\nThe secret to our success is simple: creating exceptional meals using fresh, high-quality ingredients that capture the true essence of Mexican cooking in every bite.\n\nOur mission is to help you savor the moments that truly matter. Enjoy great food. Sip on a refreshing drink. And above all, unwind and feel at home. We sincerely appreciate your continued support and trust.",
+                "about_es": "En El Campirano Taco Truck nos enorgullecemos de ofrecer a nuestros clientes una cocina mexicana vibrante y auténtica, elaborada con esmero y con una rica tradición culinaria. Cada platillo que servimos está lleno de sabores intensos y preparado para brindar una experiencia gastronómica memorable. Estamos seguros de que te encantará.\n\nEl secreto de nuestro éxito es simple: preparar platillos excepcionales utilizando ingredientes frescos y de alta calidad que capturan la verdadera esencia de la cocina mexicana en cada bocado.\n\nNuestra misión es ayudarte a disfrutar de los momentos que realmente importan. Disfruta de una buena comida, toma una bebida refrescante y, sobre todo, relájate y siéntete como en casa. Agradecemos sinceramente tu continuo apoyo y confianza."
+            },
+            "titles": {
+                "about-title_en": "We are El Campirano Taco Truck",
+                "about-title_es": "Somos El Campirano Taco Truck",
+                "about-subtitle_en": "Our Story & Tradition",
+                "about-subtitle_es": "Nuestra Historia y Tradición",
+                "gallery-title_en": "Authentic Mexican Specialties",
+                "gallery-title_es": "Especialidades Mexicanas Auténticas",
+                "gallery-subtitle_en": "Love At First Bite",
+                "gallery-subtitle_es": "Amor al Primer Bocado",
+                "info-title_en": "Location & Hours",
+                "info-title_es": "Ubicación y Horarios",
+                "info-subtitle_en": "Visit Our Truck",
+                "info-subtitle_es": "Visita Nuestro Truck"
+            },
+            "info": {
+                "hours_es": "Lunes a Sábado: 11:00 AM - 8:30 PM\nDomingo: Cerrado",
+                "hours_en": "Monday to Saturday: 11:00 AM - 8:30 PM\nSunday: Closed",
+                "phone": "717-888-095",
+                "address": "310 S Front St, Steelton, PA 17113"
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="mexican-bar"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="navbar-brand">
+                <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1785339018/ElCampiranoLOGO_1_xurace.png" alt="El Campirano Logo" width="48" height="48" id="nav-logo-img">
+                <span id="nav-brand">El Campirano Taco Truck</span>
+            </a>
+            <button class="navbar-toggler" id="navbar-toggler" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#hero-section" class="nav-link active" data-es="Inicio" data-en="Home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about-section" class="nav-link" data-es="Nuestra Historia" data-en="About Us">Nuestra Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery-section" class="nav-link" data-es="Menú y Platillos" data-en="Menu & Gallery">Menú y Platillos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#info-section" class="nav-link" data-es="Ubicación" data-en="Location">Ubicación</a>
+                </li>
+                <li class="nav-item">
+                    <div class="lang-switch">
+                        <span id="lang-es" class="lang-btn active">ES</span>
+                        <span id="lang-en" class="lang-btn">EN</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge" data-es="🌮 El Verdadero Sabor Mexicano en Steelton" data-en="🌮 Authentic Mexican Flavor in Steelton">
+                🌮 El Verdadero Sabor Mexicano en Steelton
+            </div>
+            <div class="hero-logo-container">
+                <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1785339018/ElCampiranoLOGO_1_xurace.png" id="hero-logo" alt="El Campirano Taco Truck Logo" class="hero-logo" width="160" height="160">
+            </div>
+            <h1 class="hero-title" id="hero-title-text" data-es="El Campirano Taco Truck" data-en="El Campirano Taco Truck">El Campirano Taco Truck</h1>
+            <div class="hero-subtitle">
+                <span class="line-decoration"></span>
+                <span data-es="Tacos Tradicionales • Birria • Chilaquiles • Antojitos" data-en="Traditional Tacos • Birria • Chilaquiles • Street Food">Tacos Tradicionales • Birria • Chilaquiles • Antojitos</span>
+                <span class="line-decoration"></span>
+            </div>
+            <div class="hero-buttons">
+                <!-- Botón Order Online Directo solicitado -->
+                <a href="https://elcampiranotacotruck.onlineordering.io/en/?locationId=1502660&orderMode=in_store_pickup" target="_blank" rel="noopener noreferrer" class="btn-custom btn-order">
+                    <svg style="width:20px;height:20px;fill:currentColor;" viewBox="0 0 24 24"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/></svg>
+                    <span data-es="Pedir en Línea" data-en="Order Online">Pedir en Línea</span>
+                </a>
+                <a href="#gallery-section" class="btn-custom btn-menu">
+                    <span data-es="Ver Menú" data-en="View Menu">Ver Menú</span>
+                </a>
+
+                <!-- 1. Script Motor Menutech (funcionalidad preservada) -->
+                <script src="https://www.fbgcdn.com/embedder/js/ewm2.js"></script>
+                <!-- 2. Librería Menutech (funcionalidad preservada) -->
+                <script src="https://menutech.xyz/menutechUI.min.js"></script>
+                <!-- 3. Componente Menutech preservado -->
+                <div style="display:none;">
+                    <menutech-orders id="hero-orders" cuid="00000" ruid="00000" background="#c92a31" color="#ffffff" data-glf-cuid="00000" data-glf-ruid="00000"></menutech-orders>
+                    <div id="hero-reservations-wrapper" style="display: none;">
+                        <menutech-reservations id="hero-reservations" cuid="00000" ruid="00000" background="#1a5b3a" color="#ffffff" data-glf-cuid="00000" data-glf-ruid="00000" data-glf-reservation="true"></menutech-reservations>
+                    </div>
+                </div>
+                <script>
+                    setTimeout(() => { if(window.glfBindButtons) window.glfBindButtons(); }, 1000);
+                </script>
+            </div>
+            <div>
+                <span class="hero-address" id="hero-address">
+                    <svg style="width:20px;height:20px;fill:var(--color-dorado);" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    310 S Front St, Steelton, PA 17113
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="section-subtitle-container" style="justify-content: flex-start;">
+                        <span class="line-small"></span>
+                        <span class="section-subtitle" id="about-subtitle" data-es="Nuestra Historia y Tradición" data-en="Our Story & Tradition">Nuestra Historia y Tradición</span>
+                    </div>
+                    <h2 id="about-title" data-es="Somos El Campirano Taco Truck" data-en="We are El Campirano Taco Truck">Somos El Campirano Taco Truck</h2>
+                    <p id="about-p1">En El Campirano Taco Truck nos enorgullecemos de ofrecer a nuestros clientes una cocina mexicana vibrante y auténtica, elaborada con esmero y con una rica tradición culinaria. Cada platillo que servimos está lleno de sabores intensos y preparado para brindar una experiencia gastronómica memorable. Estamos seguros de que te encantará.</p>
+                    <p id="about-p2">El secreto de nuestro éxito es simple: preparar platillos excepcionales utilizando ingredientes frescos y de alta calidad que capturan la verdadera esencia de la cocina mexicana en cada bocado.</p>
+                    <p id="about-p3">Nuestra misión es ayudarte a disfrutar de los momentos que realmente importan. Disfruta de una buena comida, toma una bebida refrescante y, sobre todo, relájate y siéntete como en casa. Agradecemos sinceramente tu continuo apoyo y confianza.</p>
+                </div>
+                <div class="about-images">
+                    <div class="about-image-wrapper">
+                        <img id="about-img-1" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1785339069/IMG-20260723-WA0012_ondiw3.jpg" alt="Tacos Auténticos El Campirano" class="about-image" loading="lazy" width="400" height="380">
+                    </div>
+                    <div class="about-image-wrapper">
+                        <img id="about-img-2" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1785339071/IMG-20260723-WA0014_zhcpgj.jpg" alt="Especialidades en el Food Truck" class="about-image" loading="lazy" width="400" height="380">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delicious Mexican Food Section -->
+    <section class="gallery-section" id="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle-container">
+                    <span class="line-small"></span>
+                    <span class="section-subtitle" id="gallery-subtitle" data-es="Amor al Primer Bocado" data-en="Love At First Bite">Amor al Primer Bocado</span>
+                    <span class="line-small"></span>
+                </div>
+                <h2 class="section-title" id="gallery-title" data-es="Especialidades Mexicanas Auténticas" data-en="Authentic Mexican Specialties">Especialidades Mexicanas Auténticas</h2>
+            </div>
+            <div id="gallery-container">
+                <!-- Se cargan de manera estática optimizada y también por JS si cambia el estado -->
+                <div class="gallery-item">
+                    <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,w_500,h_500,c_fill/v1785339145/TOSTADA_POLLO_ASADO_bkb3pi.webp" class="gallery-img" alt="Tostada de Pollo Asado" loading="lazy" width="400" height="400">
+                    <div class="gallery-overlay"><span class="gallery-label" data-es="Tostada de Pollo Asado" data-en="Grilled Chicken Tostada">Tostada de Pollo Asado</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,w_500,h_500,c_fill/v1785339146/CHILAQUILES_ROJOS_manclk.webp" class="gallery-img" alt="Chilaquiles Rojos" loading="lazy" width="400" height="400">
+                    <div class="gallery-overlay"><span class="gallery-label" data-es="Chilaquiles Rojos" data-en="Red Chilaquiles">Chilaquiles Rojos</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,w_500,h_500,c_fill/v1785339146/TACOS_DE_BIRRIA_bj1ydy.webp" class="gallery-img" alt="Tacos de Birria con Consomé" loading="lazy" width="400" height="400">
+                    <div class="gallery-overlay"><span class="gallery-label" data-es="Tacos de Birria" data-en="Birria Tacos">Tacos de Birria</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,w_500,h_500,c_fill/v1785339147/QUESADILLA_DE_CHORIZO_cvomir.webp" class="gallery-img" alt="Quesadilla de Chorizo" loading="lazy" width="400" height="400">
+                    <div class="gallery-overlay"><span class="gallery-label" data-es="Quesadilla de Chorizo" data-en="Chorizo Quesadilla">Quesadilla de Chorizo</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,w_500,h_500,c_fill/v1785339148/FLAUTAS_DE_QUESO_qnnkss.webp" class="gallery-img" alt="Flautas de Queso" loading="lazy" width="400" height="400">
+                    <div class="gallery-overlay"><span class="gallery-label" data-es="Flautas Crujientes" data-en="Crispy Flautas">Flautas Crujientes</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,w_500,h_500,c_fill/v1785339148/ELOTE_yysbqq.jpg" class="gallery-img" alt="Elote Callejero Tradicional" loading="lazy" width="400" height="400">
+                    <div class="gallery-overlay"><span class="gallery-label" data-es="Elote Callejero" data-en="Mexican Street Corn">Elote Callejero</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,w_500,h_500,c_fill/v1785339149/CHILAQUILES_VERDES_CON_CARNE_fzd4xn.webp" class="gallery-img" alt="Chilaquiles Verdes con Carne" loading="lazy" width="400" height="400">
+                    <div class="gallery-overlay"><span class="gallery-label" data-es="Chilaquiles Verdes con Carne" data-en="Green Chilaquiles with Beef">Chilaquiles Verdes con Carne</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,w_500,h_500,c_fill/v1785339150/CEMITA_AL_PASTOR_spj8xq.webp" class="gallery-img" alt="Cemita al Pastor" loading="lazy" width="400" height="400">
+                    <div class="gallery-overlay"><span class="gallery-label" data-es="Cemita al Pastor" data-en="Al Pastor Cemita">Cemita al Pastor</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,w_500,h_500,c_fill/v1785339150/BIRRIA_RAMEN_q0w3g1.webp" class="gallery-img" alt="Birria Ramen Especial" loading="lazy" width="400" height="400">
+                    <div class="gallery-overlay"><span class="gallery-label" data-es="Birria Ramen" data-en="Birria Ramen">Birria Ramen</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section" id="info-section">
+        <div class="container">
+            <div class="info-card">
+                <div class="section-header" style="margin-bottom: 40px;">
+                    <div class="section-subtitle-container">
+                        <span class="line-small"></span>
+                        <span class="section-subtitle" id="info-subtitle" data-es="Visita Nuestro Truck" data-en="Visit Our Truck">Visita Nuestro Truck</span>
+                        <span class="line-small"></span>
+                    </div>
+                    <h2 class="section-title" id="info-title" data-es="Ubicación y Horarios" data-en="Location & Hours">Ubicación y Horarios</h2>
+                </div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg style="width:26px;height:26px;fill:currentColor;" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        </div>
+                        <h4 data-es="Horarios" data-en="Opening Hours">Horarios</h4>
+                        <p id="info-hours">Lunes a Sábado: 11:00 AM - 8:30 PM<br>Domingo: Cerrado</p>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg style="width:26px;height:26px;fill:currentColor;" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        </div>
+                        <h4 data-es="Teléfono" data-en="Phone">Teléfono</h4>
+                        <p id="info-phone">717-888-095</p>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg style="width:26px;height:26px;fill:currentColor;" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        </div>
+                        <h4 data-es="Dirección" data-en="Address">Dirección</h4>
+                        <p id="info-address">310 S Front St, Steelton, PA 17113</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Pedidos CTA -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content">
+                <h3 data-es="¿Listo para probar los mejores tacos de Steelton?" data-en="Ready to taste the best tacos in Steelton?">¿Listo para probar los mejores tacos de Steelton?</h3>
+                <p data-es="Pide en línea y recoge tu orden sin filas ni demoras en nuestro Taco Truck." data-en="Order online and pick up your meal fresh without waiting in line.">Pide en línea y recoge tu orden sin filas ni demoras en nuestro Taco Truck.</p>
+                <a href="https://elcampiranotacotruck.onlineordering.io/en/?locationId=1502660&orderMode=in_store_pickup" target="_blank" rel="noopener noreferrer" class="btn-custom btn-order">
+                    <span data-es="Hacer Pedido Ahora" data-en="Order Now">Hacer Pedido Ahora</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <span class="footer-brand" id="footer-brand-title">El Campirano Taco Truck</span>
+                    <p class="footer-desc" data-es="Llevando el auténtico sabor y la tradición gastronómica mexicana a cada rincón de Steelton, PA. Ingredientes frescos, recetas familiares y atención de corazón." data-en="Bringing authentic flavor and Mexican gastronomic tradition to every corner of Steelton, PA. Fresh ingredients, family recipes, and heartfelt service.">
+                        Llevando el auténtico sabor y la tradición gastronómica mexicana a cada rincón de Steelton, PA. Ingredientes frescos, recetas familiares y atención de corazón.
+                    </p>
+                    <div class="social-icons" id="social-icons">
+                        <a href="https://www.instagram.com/elcampiranomexicanfood/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <svg style="width:20px;height:20px;fill:currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@el.campirano.mexi" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">
+                            <svg style="width:20px;height:20px;fill:currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.86.13V9.33a6.34 6.34 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.58a6.34 6.34 0 0 0 6.33 6.34 6.34 6.34 0 0 0 6.34-6.34V8.58a8.21 8.21 0 0 0 3.92 1.01V6.15a4.85 4.85 0 0 1-1-.04h-.01c-.34-.08-.68-.2-1-.34V6.69z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title" data-es="Horarios de Atención" data-en="Opening Hours">Horarios de Atención</h4>
+                    <p id="footer-hours">Lunes a Sábado: 11:00 AM - 8:30 PM<br>Domingo: Cerrado</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title" data-es="Encuéntranos" data-en="Find Us">Encuéntranos</h4>
+                    <p id="footer-address">310 S Front St, Steelton, PA 17113</p>
+                    <p id="footer-phone" data-es="Teléfono: 717-888-095" data-en="Phone: 717-888-095">Teléfono: 717-888-095</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © <span id="menutech-copyright-years"></span> Powered by <a href="https://menutech.xyz/" target="_blank" class="menutech-link">Menutech</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script solicitado para actualizar automáticamente los años desde 2015 al año actual -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentYear = new Date().getFullYear();
+            const startYear = 2015;
+            const copyrightElement = document.getElementById('menutech-copyright-years');
+            if (copyrightElement) {
+                copyrightElement.textContent = `${startYear} - ${currentYear}`;
+            }
+        });
+    </script>
+
+    <script>
+        const optimizeCloudinaryUrl = (url, options = {}) => {
+            if (!url || typeof url !== 'string' || !url.includes('res.cloudinary.com')) return url;
+            const [baseUrl, hash] = url.split('#');
+            if (!baseUrl.includes('/upload/')) return url;
+            const parts = baseUrl.split('/upload/');
+
+            let pathSegments = parts[1].split('/');
+            if (pathSegments.length > 1) {
+                const firstSegment = pathSegments[0];
+                const isVersion = /^v\d+$/.test(firstSegment);
+                const isTransformation = !isVersion && (firstSegment.includes('_') || firstSegment.includes(','));
+                if (isTransformation) {
+                    pathSegments.shift();
+                }
+            }
+            const cleanPath = pathSegments.join('/');
+
+            let transformations = ['f_auto', 'q_auto:eco', 'dpr_auto'];
+            if (options.width) {
+                transformations.push(`w_${options.width}`);
+            } else {
+                transformations.push('w_400');
+            }
+            if (options.height) transformations.push(`h_${options.height}`);
+            if (options.crop) transformations.push(`c_${options.crop}`);
+            const transformationString = transformations.join(',');
+            const optimizedUrl = `${parts[0]}/upload/${transformationString}/${cleanPath}`;
+            return hash ? `${optimizedUrl}#${hash}` : optimizedUrl;
+        };
+
+        const SOCIAL_ICONS = {
+            instagram: `<svg style="width:20px;height:20px;fill:currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>`,
+            tiktok: `<svg style="width:20px;height:20px;fill:currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.86.13V9.33a6.34 6.34 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.58a6.34 6.34 0 0 0 6.33 6.34 6.34 6.34 0 0 0 6.34-6.34V8.58a8.21 8.21 0 0 0 3.92 1.01V6.15a4.85 4.85 0 0 1-1-.04h-.01c-.34-.08-.68-.2-1-.34V6.69z"/></svg>`,
+            facebook: `<svg style="width:20px;height:20px;fill:currentColor" viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>`,
+            whatsapp: `<svg style="width:20px;height:20px;fill:currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.81 9.81 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.22 8.22 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23-1.44 0-2.85-.38-4.1-1.11l-.29-.17-3.06.81.82-2.98-.19-.3a8.22 8.22 0 0 1-1.26-4.48c0-4.54 3.7-8.23 8.24-8.23m-3.85 3.09c-.21 0-.45.03-.66.24-.21.21-.81.79-.81 1.94s.84 2.25.96 2.41c.12.16 1.63 2.49 3.96 3.5.55.24 1 .38 1.34.49.56.18 1.07.15 1.48.09.45-.06 1.39-.57 1.58-1.12.2-.55.2-1.02.14-1.12-.06-.1-.21-.16-.45-.27-.24-.12-1.39-.69-1.61-.77-.22-.08-.37-.12-.53.12-.16.24-.61.77-.75.93-.14.16-.27.18-.51.06-.24-.12-.99-.36-1.89-1.16-.7-.62-1.17-1.39-1.31-1.63-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.15.16-.25.24-.42.08-.17.04-.32-.02-.45-.06-.13-.53-1.28-.73-1.75-.19-.48-.39-.41-.53-.42l-.44-.01Z"/></svg>`
+        };
+
+        let currentLang = 'es';
+
+        function applyLanguage(lang) {
+            currentLang = lang;
+            document.querySelectorAll('[data-es]').forEach(el => {
+                const text = el.getAttribute(`data-${lang}`);
+                if (text) el.textContent = text;
+            });
+
+            const esBtn = document.getElementById('lang-es');
+            const enBtn = document.getElementById('lang-en');
+            if (!esBtn || !enBtn) return;
+
+            if (lang === 'es') {
+                esBtn.classList.add('active');
+                enBtn.classList.remove('active');
+            } else {
+                enBtn.classList.add('active');
+                esBtn.classList.remove('active');
+            }
+
+            // Actualizar párrafos e información según el idioma seleccionado
+            const state = window.MENU_TECH_STATE;
+            if (state && state.paragraphs) {
+                const p1 = document.getElementById('about-p1');
+                const p2 = document.getElementById('about-p2');
+                const p3 = document.getElementById('about-p3');
+                const content = state.paragraphs[`about_${lang}`] || state.paragraphs.about_es || state.paragraphs.about || "";
+                const segments = content.split('\n\n');
+                if (p1 && segments[0]) p1.textContent = segments[0];
+                if (p2 && segments[1]) p2.textContent = segments[1];
+                if (p3 && segments[2]) p3.textContent = segments[2];
+            }
+
+            if (state && state.info) {
+                const hoursEl = document.getElementById('info-hours');
+                const fHoursEl = document.getElementById('footer-hours');
+                const hoursText = state.info[`hours_${lang}`] || state.info.hours || "";
+                if (hoursEl) hoursEl.innerHTML = hoursText.replace(/\n/g, '<br>');
+                if (fHoursEl) fHoursEl.innerHTML = hoursText.replace(/\n/g, '<br>');
+
+                const fPhone = document.getElementById('footer-phone');
+                if (fPhone && state.info.phone) {
+                    const prefix = lang === 'es' ? 'Teléfono: ' : 'Phone: ';
+                    fPhone.textContent = prefix + state.info.phone;
+                }
+            }
+
+            if (state && state.titles) {
+                const aboutTitle = document.getElementById('about-title');
+                const aboutSub = document.getElementById('about-subtitle');
+                const galleryTitle = document.getElementById('gallery-title');
+                const gallerySub = document.getElementById('gallery-subtitle');
+                const infoTitle = document.getElementById('info-title');
+                const infoSub = document.getElementById('info-subtitle');
+
+                if (aboutTitle && state.titles[`about-title_${lang}`]) aboutTitle.textContent = state.titles[`about-title_${lang}`];
+                if (aboutSub && state.titles[`about-subtitle_${lang}`]) aboutSub.textContent = state.titles[`about-subtitle_${lang}`];
+                if (galleryTitle && state.titles[`gallery-title_${lang}`]) galleryTitle.textContent = state.titles[`gallery-title_${lang}`];
+                if (gallerySub && state.titles[`gallery-subtitle_${lang}`]) gallerySub.textContent = state.titles[`gallery-subtitle_${lang}`];
+                if (infoTitle && state.titles[`info-title_${lang}`]) infoTitle.textContent = state.titles[`info-title_${lang}`];
+                if (infoSub && state.titles[`info-subtitle_${lang}`]) infoSub.textContent = state.titles[`info-subtitle_${lang}`];
+            }
+        }
+
+        function updateUI(data) {
+            if (!data) return;
+
+            if (data.lang) {
+                applyLanguage(data.lang);
+            }
+
+            if (data.title) {
+                const navBrand = document.getElementById('nav-brand');
+                const footerBrand = document.getElementById('footer-brand-title');
+                const heroTitleText = document.getElementById('hero-title-text');
+                if (navBrand) navBrand.textContent = data.title;
+                if (footerBrand) footerBrand.textContent = data.title;
+                if (heroTitleText) heroTitleText.textContent = data.title;
+            }
+
+            if (data.logoImg) {
+                const logo = document.getElementById('hero-logo');
+                const navLogo = document.getElementById('nav-logo-img');
+                const favicon = document.getElementById('favicon');
+                const optimizedLogo = optimizeCloudinaryUrl(data.logoImg, { width: 300 });
+                if (logo) logo.src = optimizedLogo;
+                if (navLogo) navLogo.src = optimizeCloudinaryUrl(data.logoImg, { width: 100 });
+                if (favicon) favicon.href = optimizedLogo;
+            }
+
+            if (data.heroAddress !== undefined) {
+                const addr = document.getElementById('hero-address');
+                if (addr) {
+                    addr.innerHTML = `<svg style="width:20px;height:20px;fill:var(--color-dorado);" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> ${data.heroAddress}`;
+                }
+            }
+
+            const sections = {
+                'about-section': data.showAbout !== false,
+                'gallery-section': data.showGallery !== false,
+                'info-section': data.showInfo !== false
+            };
+            Object.keys(sections).forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.display = sections[id] ? '' : 'none';
+            });
+
+            const cuid = data.cuid || '';
+            const ruid = data.ruid || '';
+            const ordersBtn = document.querySelector('menutech-orders');
+            if (ordersBtn) {
+                const newOrdersBtn = document.createElement('menutech-orders');
+                newOrdersBtn.setAttribute('cuid', cuid);
+                newOrdersBtn.setAttribute('ruid', ruid);
+                newOrdersBtn.setAttribute('background', '#c92a31');
+                newOrdersBtn.setAttribute('color', '#ffffff');
+                newOrdersBtn.setAttribute('data-glf-cuid', cuid);
+                newOrdersBtn.setAttribute('data-glf-ruid', ruid);
+                ordersBtn.parentNode.replaceChild(newOrdersBtn, ordersBtn);
+            }
+
+            if (window.glfBindButtons) window.glfBindButtons();
+
+            if (data.heroImg) {
+                const heroSection = document.getElementById('hero-section');
+                if (heroSection) heroSection.style.backgroundImage = `url('${optimizeCloudinaryUrl(data.heroImg, { width: 1600 })}')`;
+            }
+
+            if (data.aboutImg1) {
+                const img = document.getElementById('about-img-1');
+                if (img) img.src = optimizeCloudinaryUrl(data.aboutImg1, { width: 600 });
+            }
+            if (data.aboutImg2) {
+                const img = document.getElementById('about-img-2');
+                if (img) img.src = optimizeCloudinaryUrl(data.aboutImg2, { width: 600 });
+            }
+
+            if (data.info) {
+                const phoneEl = document.getElementById('info-phone');
+                const addressEl = document.getElementById('info-address');
+                const fAddress = document.getElementById('footer-address');
+
+                if (phoneEl) phoneEl.textContent = data.info.phone || '';
+                if (addressEl) addressEl.textContent = data.info.address || '';
+                if (fAddress) fAddress.textContent = data.info.address || '';
+            }
+
+            if (data.socials) {
+                const container = document.getElementById('social-icons');
+                if (container) {
+                    container.innerHTML = data.socials.map(s => {
+                        const platformIcon = SOCIAL_ICONS[s.platform] || SOCIAL_ICONS.instagram;
+                        return `
+                            <a href="${s.url}" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="${s.platform}">
+                                ${platformIcon}
+                            </a>
+                        `;
+                    }).join('');
+                }
+            }
+
+            if (data.gallery && data.gallery.length > 0) {
+                const container = document.getElementById('gallery-container');
+                if (container) {
+                    const dishNames = [
+                        { es: "Tostada de Pollo Asado", en: "Grilled Chicken Tostada" },
+                        { es: "Chilaquiles Rojos", en: "Red Chilaquiles" },
+                        { es: "Tacos de Birria", en: "Birria Tacos" },
+                        { es: "Quesadilla de Chorizo", en: "Chorizo Quesadilla" },
+                        { es: "Flautas Crujientes", en: "Crispy Flautas" },
+                        { es: "Elote Callejero", en: "Mexican Street Corn" },
+                        { es: "Chilaquiles Verdes con Carne", en: "Green Chilaquiles with Beef" },
+                        { es: "Cemita al Pastor", en: "Al Pastor Cemita" },
+                        { es: "Birria Ramen", en: "Birria Ramen" }
+                    ];
+
+                    container.innerHTML = data.gallery.map((img, index) => {
+                        const label = dishNames[index] || { es: "Especialidad Mexicana", en: "Mexican Specialty" };
+                        return `
+                            <div class="gallery-item">
+                                <img src="${optimizeCloudinaryUrl(img, { width: 500, height: 500, crop: 'fill' })}" class="gallery-img" alt="${label.es}" loading="lazy" width="400" height="400">
+                                <div class="gallery-overlay"><span class="gallery-label" data-es="${label.es}" data-en="${label.en}">${currentLang === 'es' ? label.es : label.en}</span></div>
+                            </div>
+                        `;
+                    }).join('');
+                }
+            }
+        }
+
+        window.addEventListener('message', (event) => {
+            if (event.data.type === 'UPDATE_CONTENT') {
+                updateUI(event.data.data);
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.MENU_TECH_STATE) {
+                updateUI(window.MENU_TECH_STATE);
+                applyLanguage(window.MENU_TECH_STATE.lang || 'es');
+            }
+
+            const esBtn = document.getElementById('lang-es');
+            const enBtn = document.getElementById('lang-en');
+            if (esBtn) esBtn.addEventListener('click', () => applyLanguage('es'));
+            if (enBtn) enBtn.addEventListener('click', () => applyLanguage('en'));
+
+            document.body.addEventListener('click', (e) => {
+                let target = e.target;
+                while (target && target !== document.body) {
+                    if (target.id && (
+                        target.id === 'nav-brand' ||
+                        target.id === 'hero-logo' ||
+                        target.id === 'hero-section' ||
+                        target.id === 'hero-orders' ||
+                        target.id === 'hero-reservations' ||
+                        target.id === 'hero-address' ||
+                        target.id.startsWith('about-') ||
+                        target.id === 'gallery-container' ||
+                        target.id === 'info-section' ||
+                        target.id.startsWith('info-') ||
+                        target.id.startsWith('footer-') ||
+                        target.id === 'social-icons'
+                    )) {
+                        window.parent.postMessage({ type: 'SCROLL_TO', id: target.id }, '*');
+                        break;
+                    }
+                    target = target.parentElement;
+                }
+            });
+
+            // Navbar mobile toggler
+            const navbarToggler = document.getElementById('navbar-toggler');
+            const navMenu = document.getElementById('nav-menu');
+
+            navbarToggler.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const icons = navbarToggler.querySelectorAll('.toggler-icon');
+                icons.forEach((icon, index) => {
+                    if (navMenu.classList.contains('active')) {
+                        if (index === 0) icon.style.transform = 'rotate(45deg) translate(6px, 6px)';
+                        else if (index === 1) icon.style.opacity = '0';
+                        else if (index === 2) icon.style.transform = 'rotate(-45deg) translate(6px, -6px)';
+                    } else {
+                        icon.style.transform = 'none';
+                        icon.style.opacity = '1';
+                    }
+                });
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!navbarToggler.contains(e.target) && !navMenu.contains(e.target)) {
+                    navMenu.classList.remove('active');
+                    const icons = navbarToggler.querySelectorAll('.toggler-icon');
+                    icons.forEach(icon => {
+                        icon.style.transform = 'none';
+                        icon.style.opacity = '1';
+                    });
+                }
+            });
+
+            // Navbar scroll shadow and compact style
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 80) {
+                    navbar.style.boxShadow = '0 8px 30px rgba(0, 0, 0, 0.12)';
+                } else {
+                    navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.06)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
